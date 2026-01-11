@@ -1,0 +1,239 @@
+/* ============================================
+   ENTERPRISE HR MANAGEMENT SYSTEM - MODERN THEME
+   Style: Slate & Royal Blue (Modern SaaS Look)
+   ============================================ */
+
+/* Color Palette:
+   Primary Blue:    #2563EB (Bleu Royal)
+   Deep Slate:      #1E293B (Gris Anthracite sombre)
+   Accent Blue:     #38BDF8 (Bleu Ciel)
+   Background Gray: #F1F5F9 (Gris très clair)
+   Success:         #10B981
+   Danger:          #EF4444
+   Border Color:    #E2E8F0
+*/
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+.root {
+    -fx-font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #F1F5F9; /* Fond de l'app gris clair moderne */
+    
+    /* Variables réutilisables */
+    -fx-primary-color: #2563EB;
+    -fx-secondary-color: #1E293B;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.label {
+    -fx-text-fill: #334155;
+}
+
+.label-header {
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1E293B;
+}
+
+.label-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1E293B;
+}
+
+.title { /* Utilisé dans ton Employee Dashboard */
+    -fx-text-fill: #2563EB;
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   BUTTONS - Modern Rounded Style
+   ============================================ */
+
+.button {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.2), 10, 0, 0, 4);
+    -fx-transition: all 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: #1D4ED8;
+    -fx-translate-y: -1px;
+}
+
+.button-danger {
+    -fx-background-color: #EF4444;
+}
+
+.button-danger:hover {
+    -fx-background-color: #DC2626;
+}
+
+.button-success {
+    -fx-background-color: #10B981;
+}
+
+/* Bouton spécifique pour ton "Voir Reçu" */
+.button-info {
+    -fx-background-color: #334155;
+    -fx-text-fill: white;
+}
+
+/* ============================================
+   INPUT FIELDS
+   ============================================ */
+
+.text-field, .password-field, .text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2563EB;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.1), 8, 0, 0, 0);
+}
+
+/* ============================================
+   TABLE VIEW - Clean Design
+   ============================================ */
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header {
+    -fx-background-color: #F8FAFC;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 15;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #64748B;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0 0 5 0; /* Espacement entre les lignes */
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.02), 5, 0, 0, 2);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #DBEAFE;
+    -fx-text-fill: #1E40AF;
+}
+
+/* ============================================
+   STATISTICS CARDS (Dashboard)
+   ============================================ */
+
+.stat-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20px;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 15, 0, 0, 5);
+}
+
+/* Variantes colorées pour les nombres */
+.stat-card-blue { -fx-border-color: #2563EB; -fx-border-width: 0 0 0 5; }
+.stat-card-green { -fx-border-color: #10B981; -fx-border-width: 0 0 0 5; }
+.stat-card-orange { -fx-border-color: #F59E0B; -fx-border-width: 0 0 0 5; }
+.stat-card-red { -fx-border-color: #EF4444; -fx-border-width: 0 0 0 5; }
+
+.stat-number {
+    -fx-font-size: 32px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1E293B !important;
+}
+
+.stat-label {
+    -fx-text-fill: #64748B !important;
+    -fx-font-weight: 600;
+}
+
+/* ============================================
+   TAB PANE
+   ============================================ */
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #F1F5F9;
+    -fx-padding: 10 0 0 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #2563EB;
+    -fx-border-width: 3 0 0 0;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #64748B;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #2563EB;
+    -fx-font-weight: bold;
+}
+
+/* ============================================
+   LOGIN CONTAINER
+   ============================================ */
+
+.login-container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 24px;
+    -fx-padding: 50;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 30, 0, 0, 10);
+}
+
+.login-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #1E293B;
+}
+
+/* ============================================
+   DIALOGS / ALERTS (Le reçu)
+   ============================================ */
+
+.dialog-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #2563EB;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
